@@ -1,7 +1,7 @@
 const staticDevCoffee = "instalavel-emulador-v1"
 const assets = [
-  "/giemulator/",
-  "/giemulator/index.html",
+  "/",
+  "/index.html",
 ]
 
 self.addEventListener("install", installEvent => {

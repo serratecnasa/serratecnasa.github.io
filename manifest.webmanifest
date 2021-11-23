@@ -1,7 +1,7 @@
 {
     "name": "Emulador de consumo",
     "short_name": "SerraE",
-    "start_url": "/giemulator/",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#2B1867",
     "theme_color": "#100630",
