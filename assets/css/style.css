@@ -1,0 +1,11 @@
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+#btn-calc {
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px;
+}

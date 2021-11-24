@@ -1,0 +1,44 @@
+.card-img-top {
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 0.01rem 0.5rem;
+}
+
+.card-body span {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:active {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    box-shadow: unset;
+}
