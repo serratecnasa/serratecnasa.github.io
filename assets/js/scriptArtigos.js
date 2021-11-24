@@ -1,4 +1,4 @@
-var url = "http://www.wixapis.com/blog/v3/posts";
+var url = "https://www.wixapis.com/blog/v3/posts";
 
 var xhr = new XMLHttpRequest();
 xhr.open("GET", url);
