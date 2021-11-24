@@ -1,7 +1,15 @@
 const staticDevCoffee = "instalavel-emulador-v1"
+
 const assets = [
   "/",
+  "/manifest.webmanifest",
+  "/sw.js",
   "/index.html",
+  "/educakids.html",
+  "/educasustentavel.html",
+  "/jogosequiz.html",
+  "/objetivodoapp.html",
+  "/simulador.html"
 ]
 
 self.addEventListener("install", installEvent => {
@@ -10,7 +18,24 @@ self.addEventListener("install", installEvent => {
       cache.addAll(assets)
     })
   )
+  self.skipWaiting()
 })
+
+self.addEventListener('activate', event => {
+  // delete any caches that aren't in expectedCaches
+  // which will get rid of static-v1
+  event.waitUntil(
+    caches.keys().then(keys => Promise.all(
+      keys.map(key => {
+        if (!staticDevCoffee.includes(key)) {
+          return caches.delete(key);
+        }
+      })
+    )).then(() => {
+      console.log('V2 now ready to handle fetches!');
+    })
+  );
+});
 
 // Fetching content using Service Worker
 self.addEventListener('fetch', (e) => {
