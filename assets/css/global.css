@@ -1,13 +1,16 @@
 .card-img-top {
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card {
     border-radius: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: 2px 2px 4px 0px black;
 }
 
 .card-body {
     padding: 0.01rem 0.5rem;
+    background-color: var(--secondary-color);
 }
 
 .card-body span {

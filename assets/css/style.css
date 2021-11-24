@@ -3,6 +3,11 @@ a {
     color: unset;
 }
 
+body {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
 #btn-calc {
     padding: 10px;
     position: absolute;
