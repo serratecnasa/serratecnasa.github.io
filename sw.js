@@ -4,12 +4,7 @@ const assets = [
   "/",
   "/manifest.webmanifest",
   "/sw.js",
-  "/index.html",
-  "/educakids.html",
-  "/educasustentavel.html",
-  "/jogosequiz.html",
-  "/objetivodoapp.html",
-  "/simulador.html"
+  "/index.html"
 ]
 
 self.addEventListener("install", installEvent => {
