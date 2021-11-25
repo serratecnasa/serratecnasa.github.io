@@ -52,13 +52,28 @@
                     <option value="escassez">Escassez</option>
                 </select>
             </div>
-            <div class="col-6 mt-4">
+            <div class="col-8 mt-4">
+                <label for="tempodeuso" class="form-label">Tempo de uso</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="number" class="form-control" id="tempodeusoh" placeholder="horas">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" class="form-control" id="tempodeusom" placeholder="minutos">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
                 <label for="potenciadoaparelho" class="form-label">Potência do aparelho (Watts)</label>
-                <input type="number" class="form-control" id="potenciadoaparelho" placeholder="0">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="number" class="form-control" id="potenciadoaparelho" placeholder="0">
+                    </div>
+                </div>
             </div>
             <div class="col-6 mt-4 mb-5">
-                <label for="tempodeuso" class="form-label">Tempo de uso (em minutos)</label>
-                <input type="number" class="form-control" id="tempodeuso" placeholder="0">
+                <label for="dtocalc" class="form-label">Dias a serem calculados</label>
+                <input type="number" value="1" min="1" class="form-control" id="dtocalc" placeholder="0">
             </div>
             <div class="col-12 mt-4 mb-5">
                 <div id="result"></div>
